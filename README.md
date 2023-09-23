@@ -33,9 +33,9 @@ This repository used the BraTS 2020 training dataset to analyze the proposed met
 All the images are normalized into unit variance and zero mean. Before the training all the images were resized into 128x128x128 dimensions due to the limited memory and all modalities are stacked together to take advantage of the comprehensive information present in the different modalities of MRI. The final image shape that was used is 128x128x128x4. The model has been trained only for those slices having all 4 labels(0,1,2,4) to tackle class imbalance and label 4 has been converted into label 3 (so that finally the one-hot encoding has size 4).
 
 ## Model Architecture used during the training:
-# 1: 3D U-Net (Ablation)
-# 2: 3D Attention Inception U-Net (proposed)
-# 3: 3D Inception U-Net (Ablation)
+### 1: 3D U-Net (Ablation)
+### 2: 3D Attention Inception U-Net (proposed)
+### 3: 3D Inception U-Net (Ablation)
 
 ## Model architectural diagram and results will be shared once after the paper acceptance.
 
